@@ -14,7 +14,7 @@ import com.pablo.xue.airplaneapp.model.Usuario;
 import com.pablo.xue.airplaneapp.service.UsuarioService;
 
 @RestController
-@RequestMapping("/api")
+//@RequestMapping("/api")
 public class UsuarioController {
 	
 	private final UsuarioService userService = new UsuarioService();
