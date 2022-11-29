@@ -1,14 +1,15 @@
 package com.pablo.xue.airplaneapp.service;
 
+import java.text.ParseException;
 import java.util.*;
 
 import com.pablo.xue.airplaneapp.Data;
 import com.pablo.xue.airplaneapp.model.Vuelo;
 
 public class VueloService {
-	public void registerVuelo( String company, Date fecIni, int aforo, String cOrigen, String cDestino) {
+	public void registerVuelo( String company, String fecIn, int aforo, String cOrigen, String cDestino)  {
 
-		Vuelo vuel= new Vuelo(company, fecIni, aforo, cOrigen, cDestino);
+		Vuelo vuel= new Vuelo(company, fecIn, aforo, cOrigen, cDestino);
 		Data.vuelos.add(vuel);
 		// TODO Auto-generated constructor stub
 	}
@@ -21,7 +22,7 @@ public class VueloService {
 		List<Vuelo> listAux = new ArrayList<Vuelo>();
 		listAux=Data.vuelos.stream().filter(i -> i.getcOrigen().equals(cOrigen) 
 													&& i.getcDestino().equals(cDest)
-													&& i.getFecIni().toString().equals(fechaIni)).toList();
+													&& i.getFecha().equals(fechaIni)).toList();
 		return listAux;
 	}
 }

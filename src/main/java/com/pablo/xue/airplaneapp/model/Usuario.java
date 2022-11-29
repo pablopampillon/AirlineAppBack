@@ -5,7 +5,7 @@ import com.pablo.xue.airplaneapp.Data;
 public class Usuario {
 	
 
-	private String dni;
+	private int dni;
 	private String nombre;
 	private String apellidos;
 	private String nacionalidad;
@@ -18,7 +18,7 @@ public class Usuario {
 
 	public Usuario(String nombre, String apellidos, String nacionalidad, int edad, String correo) {
 		super();
-		this.dni = Data.users.size()+"";
+		this.dni = Data.users.size();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.nacionalidad = nacionalidad;
@@ -26,11 +26,13 @@ public class Usuario {
 		this.correo = correo;
 	}
 
-	public String getDni() {
+
+
+
+
+	public int getDni() {
 		return dni;
 	}
-
-
 
 	public String getNombre() {
 		return nombre;

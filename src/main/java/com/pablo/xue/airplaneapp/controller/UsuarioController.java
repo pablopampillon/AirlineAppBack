@@ -21,7 +21,7 @@ public class UsuarioController {
 	
 	/// TESTING ONLY
 	@GetMapping("/user/{id}")
-	public Usuario getUser(@PathVariable String id) {
+	public Usuario getUser(@PathVariable int id) {
 		return userService.getUser(id);
 	}
 	

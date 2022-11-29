@@ -12,7 +12,7 @@ import com.pablo.xue.airplaneapp.model.Vuelo;
 import com.pablo.xue.airplaneapp.service.VueloService;
 
 @RestController
-@RequestMapping("/api")
+
 public class VueloController {
 
 	private final VueloService vueloService = new VueloService();
@@ -24,7 +24,7 @@ public class VueloController {
 	@GetMapping("/reservas/vuelos/{orig}/{dest}/{fec}")
 	List<Vuelo> getVuelos(@PathVariable String orig,@PathVariable String dest,@PathVariable String fec) {
 //		reservV.getReserva(user.getDni());
-		List<Vuelo> vuel=new ArrayList<Vuelo>();
+		List<Vuelo> vuel=vueloService.getVuelosByParams(orig, dest, fec);
 		return  vuel;
 		
 	}

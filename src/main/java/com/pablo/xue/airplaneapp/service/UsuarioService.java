@@ -20,10 +20,10 @@ public class UsuarioService {
 		Data.users.add(user);
 		// TODO Auto-generated constructor stub
 	}
-	public Usuario getUser(String id) {
+	public Usuario getUser(int id) {
 
         
-        Usuario userAux = Data.users.stream().filter(i -> i.getDni().equals(id)).findAny().get();
+        Usuario userAux = Data.users.stream().filter(i -> i.getDni()==id).findAny().get();
 		return userAux;
 	}
 	
