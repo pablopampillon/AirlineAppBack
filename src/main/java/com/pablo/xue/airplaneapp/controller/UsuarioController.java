@@ -14,7 +14,6 @@ import com.pablo.xue.airplaneapp.model.Usuario;
 import com.pablo.xue.airplaneapp.service.UsuarioService;
 
 @RestController
-@RequestMapping("/api")
 public class UsuarioController {
 	
 	private final UsuarioService userService = new UsuarioService();
@@ -23,11 +22,6 @@ public class UsuarioController {
 	@GetMapping("/user/{id}")
 	public Usuario getUser(@PathVariable String id) {
 		return userService.getUser(id);
-	}
-	
-	@GetMapping("/test")
-	public String hola() {
-		return "hola";
 	}
 	
 }
