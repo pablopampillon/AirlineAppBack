@@ -1,10 +1,9 @@
-package service;
+package com.pablo.xue.airplaneapp.service;
 
 import java.util.Date;
 
 import com.pablo.xue.airplaneapp.Data;
-
-import model.Vuelo;
+import com.pablo.xue.airplaneapp.model.Vuelo;
 
 public class VueloService {
 	public void registerVuelo( String company, Date fecIni, int aforo, String cOrigen, String cDestino) {

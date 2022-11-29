@@ -1,4 +1,4 @@
-package model;
+package com.pablo.xue.airplaneapp.model;
 
 import java.util.Date;
 

@@ -1,11 +1,10 @@
-package service;
+package com.pablo.xue.airplaneapp.service;
 
 import org.springframework.stereotype.Component;
 
 import com.pablo.xue.airplaneapp.Data;
-
-import model.ReservaUsu;
-import model.Usuario;
+import com.pablo.xue.airplaneapp.model.ReservaUsu;
+import com.pablo.xue.airplaneapp.model.Usuario;
 
 @Component
 public class ReservaVueloService {

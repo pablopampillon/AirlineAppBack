@@ -1,12 +1,12 @@
-package controller;
+package com.pablo.xue.airplaneapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import model.Usuario;
-import service.ReservaVueloService;
+import com.pablo.xue.airplaneapp.model.Usuario;
+import com.pablo.xue.airplaneapp.service.ReservaVueloService;
 
 @RestController
 public class ReservaVueloController {
@@ -15,7 +15,7 @@ public class ReservaVueloController {
 	ReservaVueloService reservV=new ReservaVueloService();
 	@GetMapping("/reservas/vuelos/{userId}")
 	void getReserUsu(@RequestBody Usuario user) {
-		reservV.getReserva(user.getDni());
+//		reservV.getReserva(user.getDni());
 		
 	}
 
