@@ -20,9 +20,11 @@ public class VueloService {
 	
 	public List<Vuelo> getVuelosByParams(String cOrigen, String cDest, String fechaIni) {
 		List<Vuelo> listAux = new ArrayList<Vuelo>();
+
 		listAux=Data.vuelos.stream().filter(i -> i.getcOrigen().equals(cOrigen) 
 													&& i.getcDestino().equals(cDest)
 													&& i.getFecha().equals(fechaIni)).toList();
+
 		return listAux;
 	}
 }

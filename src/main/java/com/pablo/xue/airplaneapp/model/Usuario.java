@@ -4,34 +4,36 @@ import com.pablo.xue.airplaneapp.Data;
 
 public class Usuario {
 	
-
-	private int dni;
+	private int userId;
 	private String nombre;
 	private String apellidos;
 	private String nacionalidad;
 	private int edad;
 	private String correo;
+	private String dni;
 
 	public Usuario() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Usuario(String nombre, String apellidos, String nacionalidad, int edad, String correo) {
+	public Usuario(String nombre, String apellidos, String nacionalidad, int edad, String correo, String dni) {
 		super();
-		this.dni = Data.users.size();
+
+		this.userId = Data.users.size();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.nacionalidad = nacionalidad;
 		this.edad = edad;
 		this.correo = correo;
+		this.dni = dni;
 	}
 
-
-
-
-
-	public int getDni() {
-		return dni;
+	public String getDni() {
+		return this.dni;
+	}
+	
+	public int getUserId() {
+		return this.userId;
 	}
 
 	public String getNombre() {

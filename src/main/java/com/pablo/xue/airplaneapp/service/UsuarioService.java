@@ -14,16 +14,17 @@ public class UsuarioService {
 		// TODO Auto-generated constructor stub
 	}
 
-	public void registerUser(String nombre, String apellidos, String nacionalidad, int edad, String correo) {
+	public void registerUser(String nombre, String apellidos, String nacionalidad, int edad, String correo, String dni) {
 
-		Usuario user = new Usuario(nombre, apellidos, nacionalidad, edad, correo);
+		Usuario user = new Usuario(nombre, apellidos, nacionalidad, edad, correo, dni);
 		Data.users.add(user);
 		// TODO Auto-generated constructor stub
 	}
 	public Usuario getUser(int id) {
 
         
-        Usuario userAux = Data.users.stream().filter(i -> i.getDni()==id).findAny().get();
+        Usuario userAux = Data.users.stream().filter(i -> i.getUserId() == id).findAny().get();
+
 		return userAux;
 	}
 	
