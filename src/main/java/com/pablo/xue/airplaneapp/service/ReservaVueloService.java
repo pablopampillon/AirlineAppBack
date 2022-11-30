@@ -14,7 +14,7 @@ public class ReservaVueloService {
 	public void reservarVuel(int userId, int vuelId) {
 //		List<Usuario> aux=new ArrayList<Usuario>();
 		Usuario aux=new Usuario();
-		aux=Data.users.stream().filter(i->i.getDni()==userId).findAny().get();
+		aux=Data.users.stream().filter(i->i.getUserId()==userId).findAny().get();
 		if(aux!=null) {
 		ReservaUsu reserv = new ReservaUsu(userId, vuelId);
 		Data.reservas.add(reserv);
