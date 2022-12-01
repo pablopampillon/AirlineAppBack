@@ -32,8 +32,15 @@ public class AirplaneappApplication {
 
 		
 		
-		vuelServ.registerVuelo("Iberia", "2022-12-10", 120, "Madrid", "Francia", 100);
-		vuelServ.registerVuelo("Iberia", "2022-12-11", 120, "Francia", "Madrid", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-10", 120, "Madrid", "Paris", 100);
+		vuelServ.registerVuelo("Iberia", "2022-12-12", 120, "Paris", "Madrid", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-13", 120, "Pizza", "Berlin", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-14", 120, "Helsinki", "NuevaYork", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-15", 120, "Londres", "Zurich", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-16", 120, "Copenague", "Luxemburgo", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-17", 120, "Oslo", "Moscú", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-18", 120, "Viena", "Venecia", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-19", 120, "Zurich", "Londres", 120);
 		vuelServ.registerVuelo("Iberia", "asdf", 120, "Camboya", "Francia", 130);
 		
 		
