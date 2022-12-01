@@ -1,7 +1,11 @@
 package com.pablo.xue.airplaneapp.service;
 
-import java.text.ParseException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 import com.pablo.xue.airplaneapp.Data;
 import com.pablo.xue.airplaneapp.model.Vuelo;
@@ -26,5 +30,32 @@ public class VueloService {
 													&& i.getFecha().equals(fechaIni)).toList();
 
 		return listAux;
+	}
+	public List <String> getVuelosOrigen() {
+		List<String> vuelOr=new ArrayList<String>();
+		
+	
+		for(Vuelo v:Data.vuelos) {
+			vuelOr.add(v.getcOrigen());
+		}
+		
+		Set<String> temp = new HashSet<String>(vuelOr);
+		String[] uq = temp.toArray(new String[temp.size()]);
+		
+		List<String> listResult = Arrays.asList(uq);   
+		
+		return listResult;
+	}
+	public List <String> getVuelosDest() {
+		List<String> vuelOr2=new ArrayList<String>();
+		for(Vuelo v:Data.vuelos) {
+			vuelOr2.add(v.getcDestino());
+		
+		}
+		Set<String> temp2=new HashSet<String>(vuelOr2);
+		String[] tempAr=temp2.toArray(new String[temp2.size()]);
+		
+		List<String> listResult2=Arrays.asList(tempAr);
+		return listResult2;
 	}
 }

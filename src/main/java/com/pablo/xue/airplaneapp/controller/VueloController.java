@@ -29,4 +29,16 @@ public class VueloController {
 		return  vuel;
 		
 	}
+	@GetMapping("/reservas/vuelos/origen")
+	List<String> getVuelosOr() {
+//		reservV.getReserva(user.getDni());
+		return  vueloService.getVuelosOrigen();
+		
+	}
+	@GetMapping("/reservas/vuelos/destino")
+	List<String> getVuelosDs() {
+//		reservV.getReserva(user.getDni());
+		return  vueloService.getVuelosDest();
+		
+	}
 }
