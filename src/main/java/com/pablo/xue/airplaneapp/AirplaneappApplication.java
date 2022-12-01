@@ -32,16 +32,16 @@ public class AirplaneappApplication {
 
 		
 		
-		vuelServ.registerVuelo("Iberia", "asdf", 120, "Madrid", "Francia", 100);
-		vuelServ.registerVuelo("Iberia", "asdf", 120, "Madrid", "Francia", 120);
+		vuelServ.registerVuelo("Iberia", "2022-12-10", 120, "Madrid", "Francia", 100);
+		vuelServ.registerVuelo("Iberia", "2022-12-11", 120, "Francia", "Madrid", 120);
 		vuelServ.registerVuelo("Iberia", "asdf", 120, "Camboya", "Francia", 130);
 		
 		
 		ReservaVueloService reservVueloServ = new ReservaVueloService();
 		
-		reservVueloServ.reservarVuel(1, 1);
-		reservVueloServ.reservarVuel(2, 2);
-		reservVueloServ.reservarVuel(3, 3);
+//		reservVueloServ.reservarVuel(1, 1);
+//		reservVueloServ.reservarVuel(2, 2);
+//		reservVueloServ.reservarVuel(3, 3);
 
 
 	}
