@@ -39,9 +39,10 @@ public class AirplaneappApplication {
 		
 		ReservaVueloService reservVueloServ = new ReservaVueloService();
 		
-		reservVueloServ.reservarVuel(1, 1);
-		reservVueloServ.reservarVuel(2, 2);
-		reservVueloServ.reservarVuel(3, 3);
+		reservVueloServ.reservarVuel(0, 1);
+		reservVueloServ.reservarVuel(1, 2);
+//		reservVueloServ.reservarVuel(2, 2);
+//		reservVueloServ.reservarVuel(3, 3);
 
 
 	}
