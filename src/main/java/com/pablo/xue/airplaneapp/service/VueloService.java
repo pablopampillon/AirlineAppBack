@@ -7,9 +7,9 @@ import com.pablo.xue.airplaneapp.Data;
 import com.pablo.xue.airplaneapp.model.Vuelo;
 
 public class VueloService {
-	public void registerVuelo( String company, String fecIn, int aforo, String cOrigen, String cDestino)  {
+	public void registerVuelo( String company, String fecIn, int aforo, String cOrigen, String cDestino, int precio)  {
 
-		Vuelo vuel= new Vuelo(company, fecIn, aforo, cOrigen, cDestino);
+		Vuelo vuel= new Vuelo(company, fecIn, aforo, cOrigen, cDestino, precio);
 		Data.vuelos.add(vuel);
 		// TODO Auto-generated constructor stub
 	}

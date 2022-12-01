@@ -30,8 +30,12 @@ public class ReservaVueloService {
 	public List<ReservaUsu> getReserva(int userId) {
 		List<ReservaUsu> listAux=new ArrayList<ReservaUsu>();
         
-        listAux = Data.reservas.stream().filter(i -> i.getDni() == userId).toList();
+        listAux = Data.reservas.stream().filter(i -> i.getUserId() == userId).toList();
 		return listAux;
+	}
+	
+	public List<ReservaUsu> getAllReservas(){
+		return Data.reservas;
 	}
 
 }
